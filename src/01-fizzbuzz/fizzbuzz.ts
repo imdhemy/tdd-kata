@@ -1,6 +1,9 @@
 export function fizzBuzz(num: number): string {
-  if (num % 3 === 0 && num % 5 === 0) return 'FizzBuzz';
-  if (num % 3 === 0) return 'Fizz';
-  if (num % 5 === 0) return 'Buzz';
-  return num.toString();
+    const multiplyOfThree: boolean = num % 3 === 0;
+    const multiplyOfFive: boolean = num % 5 === 0;
+
+    if(! (multiplyOfThree || multiplyOfFive)) return `${num}`;
+    if( multiplyOfThree && multiplyOfFive ) return 'FizzBuzz';
+    if( multiplyOfThree ) return  'Fizz'
+    return 'Buzz';
 }
