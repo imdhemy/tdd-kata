@@ -1,0 +1,40 @@
+{
+  "name": "tdd-kata",
+  "version": "1.0.0",
+  "description": "Step by step Code katas to learn TDD with incremental levels",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [
+    "tdd",
+    "kata",
+    "typescript",
+    "testing",
+    "learning",
+    "kata"
+  ],
+  "author": {
+    "name": "Dhemy",
+    "email": "imdhey@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/node": "^24.5.2",
+    "@typescript-eslint/eslint-plugin": "^8.44.0",
+    "@typescript-eslint/parser": "^8.44.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "eslint": "^9.36.0",
+    "globals": "^16.4.0",
+    "jiti": "^2.5.1",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.0",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
