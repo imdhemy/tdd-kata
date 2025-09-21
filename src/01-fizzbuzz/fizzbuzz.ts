@@ -1,6 +1,8 @@
 export function fizzBuzz(num: number): string {
-  if (num % 3 === 0 && num % 5 === 0) return 'FizzBuzz';
-  if (num % 3 === 0) return 'Fizz';
-  if (num % 5 === 0) return 'Buzz';
-  return num.toString();
+  let result = '';
+
+  if (num % 3 === 0) result += 'Fizz';
+  if (num % 5 === 0) result += 'Buzz';
+
+  return result || num.toString();
 }
